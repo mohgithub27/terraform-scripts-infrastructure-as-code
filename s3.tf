@@ -7,5 +7,4 @@ resource "aws_s3_bucket_object" "example" {
   key    = "example-job-script.py"
   source = "example-job-script.py"
 
-  etag = filemd5("example-job-script.py")
 }
