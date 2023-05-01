@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    options {
+      gitTool 'Default'
+    }
     environment {
       PATH = "${PATH}:${getTerraformpath()}"
         }
