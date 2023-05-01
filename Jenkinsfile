@@ -12,6 +12,7 @@ pipeline{
 	stage ('Checkout'){
        	   steps {
        		 git branch: 'main', url: 'https://github.com/mohgithub27/terraform-scripts-infrastructure-as-code.git'
+	   }
       }
 
         stage ('terraform init'){
