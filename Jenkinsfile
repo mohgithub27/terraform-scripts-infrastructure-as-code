@@ -4,9 +4,11 @@ def getTerraformpath() {
 
 pipeline{
     agent any
-    options {
-      gitTool 'Default'
+    tools {
+        git 'git'
+        terraform 'terraform'
     }
+
     environment {
       PATH = "${PATH}:${getTerraformpath()}"
     }
