@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3_bucket_through_tf" {
-  bucket = "Demo-bucket-for-IAC"
+  bucket = "demo-bucket-for-iac"
 
   server_side_encryption_configuration {
     rule {
